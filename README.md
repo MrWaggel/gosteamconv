@@ -36,7 +36,7 @@ func main() {
 	fmt.Println(steam64)
 }
 ```
-Will outputs the following
+Will output the following
 ```
 76561197973356764
 ```
