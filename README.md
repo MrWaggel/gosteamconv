@@ -1,5 +1,6 @@
 # gosteamconv
-This package is meant for the steamid format 'STEAM_0:0:123456' to an 32 or 64 bit integer. This is all done following the official wiki.
+This package is meant to convert the steamid format 'STEAM_0:0:123456' to an 32 or 64 bit integer. This is all done following the official wiki.
+
 https://developer.valvesoftware.com/wiki/SteamID
 
 ##Install
