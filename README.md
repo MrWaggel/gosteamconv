@@ -30,10 +30,11 @@ import (
 
 func main() {
 	steam64, err := gosteamconv.SteamStringToInt64("STEAM_0:0:6545518")
-	if err != nil {
+	if err == nil {
+		fmt.Println(steam64)
+	} else {
 		fmt.Println(err)
 	}
-	fmt.Println(steam64)
 }
 ```
 Will output the following
