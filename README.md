@@ -3,23 +3,15 @@ This package is meant to convert the steamid format 'STEAM_0:0:123456' to an 32 
 
 https://developer.valvesoftware.com/wiki/SteamID
 
-##Install
+##go get
 ```
 go get github.com/MrWaggel/gosteamconv/
 ```
 
-##Functions
-```
-SteamStringToInt32(string) (int, error)
-```
-Converts the STEAM_ string to an 32bit integer.
+##GoDoc
+https://godoc.org/github.com/MrWaggel/gosteamconv
 
-```
-SteamStringToInt64(string) (int64, error)
-```
-Converts the STEAM_ string into an 64bit integer (community id)
-
-###Example
+##Example
 ```go
 package main
 
