@@ -32,7 +32,7 @@ func SteamStringToInt64(steamstring string) (int64, error) {
 	return int64((Z * 2) + 76561197960265728 + Y), nil
 }
 
-// SteamInt64ToString takes a 64 bit integer and converts it as a steamid as a steamid string format "STEAM_X:Y:Z"
+// SteamInt64ToString takes a 64 bit integer and converts it to a steamid string format "STEAM_X:Y:Z"
 // The argument must be bigger than 76561197960265728 or it will return an error.
 func SteamInt64ToString(steamInt int64) (string, error) {
 	if steamInt <= 76561197960265728 {
@@ -45,7 +45,7 @@ func SteamInt64ToString(steamInt int64) (string, error) {
 
 }
 
-// SteamInt64ToString takes a 32 bit integer and converts it as a steamid as a steamid string format "STEAM_X:Y:Z"
+// SteamInt64ToString takes a 32 bit integer and converts it to a steamid string format "STEAM_X:Y:Z"
 // The argument must be bigger than 0 or it will return an error.
 func SteamInt32ToString(steamInt int32) (string, error) {
 	if steamInt <= 0 {
