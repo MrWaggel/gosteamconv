@@ -1,6 +1,9 @@
 package gosteamconv
 
-import "strconv"
+import (
+	"errors"
+	"strconv"
+)
 
 func SteamStringToInt32(steamstring string) (int, error) {
 	Y, err := strconv.Atoi(steamstring[8:9])
@@ -24,4 +27,24 @@ func SteamStringToInt64(steamstring string) (int64, error) {
 		return int64(0), err
 	}
 	return int64((Z * 2) + 76561197960265728 + Y), nil
+}
+
+func SteamInt64ToString(steamInt int64) (string, error) {
+	if steamInt <= 76561197960265728 {
+		return string(""), errors.New("64 bit steamid int should be bigger than 76561197960265728")
+	}
+	steamInt = steamInt - 76561197960265728
+	remainder := steamInt % 2
+	steamInt = steamInt / 2
+	return "STEAM_0:" + strconv.FormatInt(remainder, 10) + ":" + strconv.FormatInt(steamInt, 10), nil
+
+}
+
+func SteamInt32ToString(steamInt int32) (string, error) {
+	if steamInt <= 0 {
+		return string(""), errors.New("32 bit steamid int should be bigger than 0")
+	}
+	remainder := steamInt % 2
+	steamInt = steamInt / 2
+	return "STEAM_0:" + strconv.FormatInt(int64(remainder), 10) + ":" + strconv.FormatInt(int64(steamInt), 10), nil
 }
