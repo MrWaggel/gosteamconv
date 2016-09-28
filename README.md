@@ -10,6 +10,7 @@ go get github.com/MrWaggel/gosteamconv/
 
 ##GoDoc
 https://godoc.org/github.com/MrWaggel/gosteamconv
+[![GoDoc](https://godoc.org/github.com/MrWaggel/gosteamconv?status.svg)](https://godoc.org/github.com/MrWaggel/gosteamconv)
 
 ##Example
 ```go
