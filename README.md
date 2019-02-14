@@ -3,17 +3,17 @@ This package is meant to convert the steamid format 'STEAM_0:0:123456' to an 32 
 
 https://developer.valvesoftware.com/wiki/SteamID
 
-##go get
+## go get
 ```
 go get github.com/MrWaggel/gosteamconv/
 ```
 
-##GoDoc
+## GoDoc
 https://godoc.org/github.com/MrWaggel/gosteamconv
 
 [![GoDoc](https://godoc.org/github.com/MrWaggel/gosteamconv?status.svg)](https://godoc.org/github.com/MrWaggel/gosteamconv)
 
-##Example
+## Example
 ```go
 package main
 
