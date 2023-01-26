@@ -1,5 +1,9 @@
-# gosteamconv [![GoDoc](https://godoc.org/github.com/MrWaggel/gosteamconv?status.svg)](https://godoc.org/github.com/MrWaggel/gosteamconv)
-This package is meant to convert the steamid format 'STEAM_0:0:123456' to a 32 or 64 bit integer, or an integer to the string format. This is all done following the official wiki.
+# gosteamconv
+[![Go Reference](https://pkg.go.dev/static/frontend/badge/badge.svg)](https://pkg.go.dev/github.com/mrwaggel/gosteamconv)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mrwaggel/gosteamconv)](https://goreportcard.com/report/github.com/mrwaggel/gosteamconv)
+
+This Go package provides functions to convert the steamid string format 'STEAM_0:0:123456' to a 32 or 64 bit integer, 
+or an integer to the string format. This is all done following the official wiki.
 https://developer.valvesoftware.com/wiki/SteamID
 
 ## go get
